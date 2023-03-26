@@ -2,13 +2,16 @@
   "name": "astrowebsite",
   "module": "index.ts",
   "type": "module",
-	"scripts": {
-		"build": "astro check && tsc --noEmit && astro build"
-	},
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && tsc --noEmit && astro build",
+    "start": "astro dev"
+  },
   "devDependencies": {
     "bun-types": "^0.5.0"
   },
   "dependencies": {
-    "astro": "^2.1.7"
+    "astro": "^2.1.7",
+    "firebase-tools": "^11.25.1"
   }
 }
