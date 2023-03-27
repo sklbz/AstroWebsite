@@ -11,23 +11,12 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<style>
-			* {
-				list-style-type: none;
-				list-style: none;
-				padding: none;
-				border: none;
-				outline: none;
-				margin: none;
-				color: currentColor;
-			}
-		</style>
 		<title>{title}</title>
 	</head>
-	<body style="margin: 0;">
+	<body>
 		<Navbar />
 		<Header />
-		<main style="margin-left: 5rem; padding: 1rem;">
+		<main>
 			<slot />
 		</main>
 		<Footer />

@@ -50,30 +50,11 @@
 		--transition-speed: 600ms;
 	}
 
-	body {
-		color: black;
-		background-color: white;
-		margin: 0;
-		padding: 0;
-	}
-
-	body::-webkit-scrollbar {
-		width: 0.25rem;
-	}
-
-	body::-webkit-scrollbar-track {
-		background: #1e1e24;
-	}
-
-	body::-webkit-scrollbar-thumb {
-		background: #6649b8;
-	}
-
 	.navbar {
 		position: fixed;
 		background-color: var(--bg-primary);
 		transition: width 600ms ease;
-		overflow: none;
+		overflow: hidden;
 	}
 
 	.navbar-nav {
@@ -155,10 +136,6 @@
 
 		.nav-link {
 			justify-content: center;
-		}
-
-		main {
-			margin: 0;
 		}
 	}
 
