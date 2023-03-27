@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro check && tsc --noEmit && astro build",
+		"deploy": "firebase deploy",
     "start": "astro dev"
   },
   "devDependencies": {
