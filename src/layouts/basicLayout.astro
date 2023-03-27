@@ -1,34 +1,35 @@
 ---
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
-import Navbar from "@components/Navbar.svelte"
+import Navbar from "@components/Navbar.svelte";
 const { title } = Astro.props;
 ---
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		*{
-		list-style-type: none;
-		list-style: none;
-		padding: none;
-		border: none;
-		outline: none;
-		margin: none;
-		color: currentColor;
-	}
-	</style>
-	<title>{title}</title>
-</head>
-<body style="margin: 0;">
-	<Navbar />
-	<Header />
-	<main>
-		<slot />
-	</main>
-	<Footer />
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			* {
+				list-style-type: none;
+				list-style: none;
+				padding: none;
+				border: none;
+				outline: none;
+				margin: none;
+				color: currentColor;
+			}
+		</style>
+		<title>{title}</title>
+	</head>
+	<body style="margin: 0;">
+		<Navbar />
+		<Header />
+		<main style="margin-left: 5rem; padding: 1rem;">
+			<slot />
+		</main>
+		<Footer />
+	</body>
 </html>
