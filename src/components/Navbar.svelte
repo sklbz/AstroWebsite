@@ -172,7 +172,7 @@ main {
 @media only screen and (min-width: 600px) {
   .navbar {
     top: 0;
-		right: 0;
+		left: 0;
     width: 5rem;
     height: 100vh;
   }
