@@ -30,4 +30,14 @@
 	</ul>
 </nav>
 
-<style></style>
+<style>
+	* {
+		list-style-type: none;
+		list-style: none;
+		padding: none;
+		border: none;
+		outline: none;
+		margin: none;
+		color: currentColor;
+	}
+</style>

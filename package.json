@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro check && tsc --noEmit && astro build",
-    "deploy": "firebase deploy"
+    "deploy": "astro check && tsc --noEmit && astro build && firebase deploy"
   },
   "devDependencies": {
     "bun-types": "^0.5.0"
