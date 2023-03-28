@@ -51,7 +51,7 @@
 			</a>
 		</li>
 		<li class="nav-item" id="themeButton">
-			<a href="#" class="nav-link">
+			<a href="/" class="nav-link">
 				<svg
 					class="theme-icon svg-inline--fa fa-moon-stars fa-w-16 fa-7x"
 					id="lightIcon"
@@ -262,10 +262,6 @@
 
 		.nav-link {
 			justify-content: center;
-		}
-
-		main {
-			margin: 0;
 		}
 	}
 
