@@ -1,8 +1,9 @@
 ---
 import "@styles/global.css";
 import BasicLayout from "@layouts/basicLayout.astro";
+import FancyLogo from "@components/FancyLogo.svelte";
 ---
 
 <BasicLayout title="Home">
-	hello
+	<FancyLogo client:idle />
 </BasicLayout>

@@ -10,7 +10,8 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
-      "@styles/*": ["src/styles/*"]
+      "@styles/*": ["src/styles/*"],
+			"@js/*":["src/js/*"],
     },
     "lib": [
       "ESNext"
@@ -27,7 +28,6 @@
     "allowJs": true,
     "types": [
       "bun-types" // add Bun global
-    ],
-		
+    ]
   }
 }
