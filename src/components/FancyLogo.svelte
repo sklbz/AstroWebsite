@@ -1,8 +1,8 @@
 <script>
 	import { quintOut } from 'svelte/easing';
 	import { fade, draw, fly } from 'svelte/transition';
-	import { expand } from '../js/custom-transition.js/index.jsn.js';
-	import { inner, outer } from '../js/shape.js/index.js';
+	import { expand } from '@js/custom-transition.js';
+	import { inner, outer } from '@js/shape.js';
   
 	let visible = true;
 </script>
