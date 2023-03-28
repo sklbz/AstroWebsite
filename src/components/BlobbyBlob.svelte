@@ -28,11 +28,13 @@
   });
 	let mouse = false;
 </script>
-
-<div id="blur" on:pointermove={handleMouseMove}></div>
-{#if mouse}
-<div id="blob" bind:this={blob}></div>
-{/if}
+<svelte:body on:pointermove={handleMouseMove}/>
+<div id="wrapper">
+	<div id="blur"></div>
+	{#if mouse}
+	<div id="blob" bind:this={blob}></div>
+	{/if}
+</div>
 
 <style>
   body {
@@ -68,13 +70,18 @@
     background: linear-gradient(to right, aquamarine, mediumpurple);
     animation: rotate 20s infinite;
     opacity: 0.8;
+		z-index: -100;
   }
 
   #blur {
     height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-    backdrop-filter: blur(12vmax);
+		width:100%;
+    position:absolute;
+		top:0;
+		left:0;
+		bottom: 0;
+		right: 0;
+    backdrop-filter: blur(20vmax);
+		z-index: -50;
   }
 </style>

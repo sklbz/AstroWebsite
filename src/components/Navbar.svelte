@@ -1,10 +1,15 @@
-<script></script>
+<script>
+	const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	const hacked = e => {
+		e.innerText = e.innerText.split("").map(letter => letters[Math.floor(Math.random()*26)]).join("");
+	};
+</script>
 
 <nav class="navbar">
 	<ul class="navbar-nav">
 		<li class="logo">
 			<a href="/" class="nav-link">
-				<span class="link-text logo-text">SKLBZ</span>
+				<span class="link-text logo-text" on:mouseover={hacked}>SKLBZ</span>
 				<svg
 					aria-hidden="true"
 					focusable="false"
@@ -54,6 +59,7 @@
 </nav>
 
 <style>
+	@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 	* {
 		text-decoration: none;
 		list-style-type: none;
@@ -107,6 +113,7 @@
 		text-decoration: none;
 		filter: grayscale(100%) opacity(0.7);
 		transition: var(--transition-speed);
+		font-weight: bold;
 	}
 
 	.nav-link:hover {
@@ -118,6 +125,7 @@
 	.link-text {
 		display: none;
 		margin-left: 1rem;
+		font-family: 'Space Mono', monospace;
 	}
 
 	.nav-link svg {
