@@ -1,4 +1,5 @@
 <script>
+	import { onMount } from 'svelte';
   let mouseX = 0;
   let mouseY = 0;
   let blob;
