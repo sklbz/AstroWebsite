@@ -23,13 +23,13 @@
     requestAnimationFrame(animateBlob);
   }
 
-  onMount(async () => {
-    await requestAnimationFrame(animateBlob);
+  onMount(() => {
+    requestAnimationFrame(animateBlob);
   });
 	let mouse = false;
 </script>
 
-<div id="blur"></div>
+<div id="blur" on:pointermove={handleMouseMove}></div>
 {#if mouse}
 <div id="blob" bind:this={blob}></div>
 {/if}
@@ -48,7 +48,7 @@
     }
 
     50% {
-      scale: 1 1.5;
+      scale: 1 1.25;
     }
 
     to {
@@ -58,7 +58,7 @@
 
   #blob {
     background-color: white;
-    height: 34vmax;
+    height: 20vmax;
     aspect-ratio: 1;
     position: absolute;
     left: 50%;
