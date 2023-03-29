@@ -1,6 +1,7 @@
 <script>
 	const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	const hacked = e => {
+		console.log(e);
 		e.innerText = e.innerText.split("").map(letter => letters[Math.floor(Math.random()*26)]).join("");
 	};
 </script>
@@ -9,7 +10,7 @@
 	<ul class="navbar-nav">
 		<li class="logo">
 			<a href="/" class="nav-link">
-				<span class="link-text logo-text" on:mouseover={hacked}>SKLBZ</span>
+				<span class="link-text logo-text" on:mouseover={hacked} on:focus={hacked}>SKLBZ</span>
 				<svg
 					aria-hidden="true"
 					focusable="false"
