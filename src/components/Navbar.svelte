@@ -70,6 +70,7 @@
 		outline: 0;
 		margin: 0;
 		color: currentColor;
+		z-index: 100;
 	}
 	:root {
 		font-size: 16px;

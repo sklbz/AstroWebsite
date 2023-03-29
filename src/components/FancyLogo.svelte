@@ -43,17 +43,20 @@
 	svg {
 		width: 100vw;
 		height: 100vh;
+		z-index: 10;
 	}
 
 	path {
 		fill: white;
 		opacity: 1;
+		z-index: 10;
 	}
 
 	label {
 		position: absolute;
 		top: 1em;
 		left: 1em;
+		z-index: 10;
 	}
 
 	.centered {
@@ -65,10 +68,12 @@
 		font-family: 'Overpass';
 		letter-spacing: 0.12em;
 		color: #676778;
+		z-index: 10;
 		font-weight: 400;
 	}
 
 	.centered span {
+		z-index: 10;
 		will-change: filter;
 	}
 </style>
