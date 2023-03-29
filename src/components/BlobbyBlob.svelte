@@ -76,7 +76,7 @@
   #blur {
     height: 100%;
 		width:100%;
-    position:absolute;
+    position:fixed;
 		top:0;
 		left:0;
 		bottom: 0;
