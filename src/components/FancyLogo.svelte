@@ -55,7 +55,7 @@
 	label {
 		position: absolute;
 		top: 1em;
-		left: 1em;
+		right: 1em;
 		z-index: 10;
 	}
 
