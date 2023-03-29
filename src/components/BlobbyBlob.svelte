@@ -37,13 +37,6 @@
 </div>
 
 <style>
-  body {
-    background-color: black;
-    height: 100vh;
-    margin: 0rem;
-    overflow: hidden;
-  }
-
   @keyframes rotate {
     from {
       rotate: 0deg;
