@@ -62,8 +62,7 @@
     border-radius: 50%;
     background: linear-gradient(to right, aquamarine, mediumpurple);
     animation: rotate 20s infinite;
-    opacity: 0.8;
-		z-index: -100;
+    z-index: -100;
   }
 
   #blur {
