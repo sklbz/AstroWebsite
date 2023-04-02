@@ -52,7 +52,6 @@
   }
 
   #blob {
-    background-color: white;
     height: 20vmax;
     aspect-ratio: 1;
     position: absolute;
