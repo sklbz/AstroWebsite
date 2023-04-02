@@ -37,22 +37,26 @@
 			</a>
 		</li>
 		<li class="nav-item">
-			<a href="/" class="navlink">
+			<a href="/" class="nav-link">
+				<svg
+          aria-hidden="true"
+          focus>
+				</svg>
+				<span class="link-text">HELLO</span>
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="/" class="nav-link">
 				<span class="link-text" />
 			</a>
 		</li>
 		<li class="nav-item">
-			<a href="/" class="navlink">
+			<a href="/" class="nav-link">
 				<span class="link-text" />
 			</a>
 		</li>
 		<li class="nav-item">
-			<a href="/" class="navlink">
-				<span class="link-text" />
-			</a>
-		</li>
-		<li class="nav-item">
-			<a href="/" class="navlink">
+			<a href="/" class="nav-link">
 				<span class="link-text" />
 			</a>
 		</li>
@@ -75,7 +79,7 @@
 	:root {
 		font-size: 16px;
 		/* 		font-family: "Open Sans"; */
-		--text-primary: #b6b6b6;
+		--text-primary: rgba(235, 235, 235, 0.64);
 		--text-secondary: #ececec;
 		--bg-primary: #23232e;
 		--bg-secondary: #141418;
@@ -85,7 +89,7 @@
 	.navbar {
 		position: fixed;
 		background-color: var(--bg-primary);
-		transition: width 600ms ease;
+		transition: width var(--transition-speed) ease;
 		overflow: hidden;
 	}
 
@@ -108,6 +112,8 @@
 	}
 
 	.nav-link {
+		width: 100%;
+		height: 100%;
 		display: flex;
 		align-items: center;
 		height: 5rem;
@@ -152,7 +158,7 @@
 	.logo {
 		font-weight: bold;
 		text-transform: uppercase;
-		margin-bottom: 1rem;
+		margin-bottom: .5rem;
 		text-align: center;
 		color: var(--text-secondary);
 		background: var(--bg-secondary);
