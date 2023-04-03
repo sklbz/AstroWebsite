@@ -1,12 +1,6 @@
 <script lang="ts">
   let logoText = "SKLBZ";
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  const hacked = (hoveredText: String) => {
-    hoveredText = hoveredText
-      .split("")
-      .map((letter) => letters[Math.floor(Math.random() * 26)])
-      .join("");
-  };
 </script>
 
 <nav class="navbar">
@@ -16,11 +10,22 @@
         href="/"
         class="nav-link"
         on:mouseover={() => {
-          hacked(logoText);
+          const finalText = logoText;
+          let iteration = 0;
+          const interval = setInterval(() => {
+            logoText = logoText
+              .split("")
+              .map((letter, index) => {
+								if (index <= iteration) return letter;
+								else return letters[Math.floor(Math.random() * 26)];
+              })
+              .join("");
+							if (iteration > finalText.length) clearInterval(interval);
+            iteration += 1 / 3;
+          }, 30);
+					interval.unref();
         }}
-        on:focus={() => {
-          hacked(logoText);
-        }}
+        on:focus={() => {}}
       >
         <span class="link-text logo-text">{logoText}</span>
         <svg
