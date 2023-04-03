@@ -147,7 +147,6 @@
   .link-text {
     display: none;
     margin-left: 1rem;
-    font-family: "Space Mono", monospace;
   }
 
   .nav-link svg {
@@ -171,13 +170,12 @@
 
   .logo {
     font-family: "Press Start 2P", cursive;
-    font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
     text-align: center;
     color: var(--text-secondary);
     background: var(--bg-secondary);
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     letter-spacing: 0.3ch;
     width: 100%;
   }
