@@ -52,7 +52,7 @@
   }
 
   #blob {
-    height: 20vmax;
+    height: 25vmax;
     aspect-ratio: 1;
     position: absolute;
     left: 50%;
