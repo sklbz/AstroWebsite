@@ -6,28 +6,29 @@
 <nav class="navbar">
   <ul class="navbar-nav">
     <li class="logo">
-      <a
-        href="/"
-        class="nav-link"
-        on:mouseover={() => {
+      <a href="/" class="nav-link">
+        <span class="link-text logo-text"
+				on:mouseover={() => {
           const finalText = logoText;
           let iteration = 0;
           const interval = setInterval(() => {
             logoText = logoText
               .split("")
               .map((letter, index) => {
-								if (index <= iteration) return letter;
-								else return letters[Math.floor(Math.random() * 26)];
+								letter = finalText[index];
+
+								if (index < iteration) return letter;
+
+								return letters[Math.floor(Math.random() * 26)];
               })
               .join("");
+
 							if (iteration > finalText.length) clearInterval(interval);
-            iteration += 1 / 3;
-          }, 30);
-					interval.unref();
+
+            iteration += 1 / 5;
+          }, 20);
         }}
-        on:focus={() => {}}
-      >
-        <span class="link-text logo-text">{logoText}</span>
+        on:focus={() => {}} >{logoText}</span>
         <svg
           aria-hidden="true"
           focusable="false"
