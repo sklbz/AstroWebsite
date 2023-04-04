@@ -29,12 +29,10 @@
 	let mouse = false;
 </script>
 <svelte:body on:pointermove={handleMouseMove}/>
-<div id="wrapper">
-	<div id="blur"></div>
-	{#if mouse}
-	<div id="blob" bind:this={blob}></div>
-	{/if}
-</div>
+<div id="blur"></div>
+{#if mouse}
+<div id="blob" bind:this={blob}></div>
+{/if}
 
 <style>
   @keyframes rotate {
