@@ -173,3 +173,4 @@ dist
 .firebase
 .firebase/
 .firebase/*
+firebase-debug.log
