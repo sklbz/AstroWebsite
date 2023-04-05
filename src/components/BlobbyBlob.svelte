@@ -28,6 +28,7 @@
   });
 	let mouse = false;
 </script>
+
 <svelte:body on:pointermove={handleMouseMove}/>
 <div id="blur"></div>
 {#if mouse}
