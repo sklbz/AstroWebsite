@@ -12,7 +12,6 @@
       "@layouts/*": ["src/layouts/*"],
       "@styles/*": ["src/styles/*"],
 			"@js/*":["src/js/*"],
-			"@imgs/*":["src/imgs/*"],
     },
     "lib": [
       "ESNext"
