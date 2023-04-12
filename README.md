@@ -1,3 +1,2 @@
 # AstroWebsite
-website with astro.js
-<a href="https://sklbz-web.web.app/" target="_blank">deployed</a> with firebase
+website with astro.js <a target="_blank" href="https://sklbz-web.web.app/">deployed</a> with firebase
