@@ -6,7 +6,7 @@
 <nav class="navbar">
   <ul class="navbar-nav">
     <li class="logo">
-      <a href="/index.html" class="nav-link">
+      <a href="/" class="nav-link">
         <span class="link-text logo-text"
 				on:mouseover={() => {
           const finalText = logoText;
