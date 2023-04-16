@@ -6,18 +6,18 @@
     "dev": "astro dev",
     "build": "astro build",
     "deploy": "astro check && tsc --noEmit && astro build && firebase deploy",
-		"preview": "astro preview",
-		"test": "playwright test"
+    "preview": "astro preview",
+    "test": "playwright test"
   },
   "devDependencies": {
-    "bun-types": "^0.5.0"
+    "bun-types": "^0.5.0",
+    "playwright": "^1.32.3"
   },
   "dependencies": {
     "@astrojs/svelte": "^2.1.0",
     "astro": "^2.1.7",
     "firebase": "^9.18.0",
     "firebase-tools": "^11.25.1",
-    "playright": "latest",
     "svelte": "^3.54.0"
   }
 }
