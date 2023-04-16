@@ -15,6 +15,7 @@
     "astro": "^2.1.7",
     "firebase": "^9.18.0",
     "firebase-tools": "^11.25.1",
+    "playright": "latest",
     "svelte": "^3.54.0"
   }
 }
