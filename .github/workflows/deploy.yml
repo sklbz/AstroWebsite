@@ -1,2 +1,17 @@
 name: CI/CD integration
 
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  builds:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: setup-node@v1
+        with:
+          node-version: latest
+      - run: bun ci
+      - run: bun run deploy
