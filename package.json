@@ -7,10 +7,11 @@
     "build": "astro build",
     "deploy": "astro check && tsc --noEmit && astro build && firebase deploy",
     "preview": "astro preview",
-    "test": "playwright test"
+    "test": "jest --watchAll --verbose"
   },
   "devDependencies": {
-    "bun-types": "^0.5.0"
+    "bun-types": "^0.5.0",
+    "jest": "^29.5.0"
   },
   "dependencies": {
     "@astrojs/svelte": "^2.1.0",
