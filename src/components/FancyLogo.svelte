@@ -37,9 +37,8 @@
 	toggle me
 </label>
 
-<link href="https://fonts.googleapis.com/css?family=Overpass:100,400" rel="stylesheet">
-
 <style>
+	@import url("https://fonts.googleapis.com/css?family=Overpass:100,400");
 	svg {
 		width: 100vw;
 		height: 100vh;
