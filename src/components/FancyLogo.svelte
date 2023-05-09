@@ -38,7 +38,7 @@
 </label>
 
 <style>
-	@import url("https://fonts.googleapis.com/css?family=Overpass:100,400");
+	@import url("https://fonts.googleapis.com/css?family=Overpass:100,400&display=swap");
 	svg {
 		width: 100vw;
 		height: 100vh;
