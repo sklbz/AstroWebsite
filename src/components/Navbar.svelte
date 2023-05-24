@@ -126,7 +126,7 @@
   }
 
   .nav-link {
-    width: 100%;
+    width: calc(100% - 1px);
     height: 100%;
     display: flex;
     align-items: center;
@@ -136,6 +136,8 @@
     filter: grayscale(100%) opacity(0.7);
     transition: var(--transition-speed);
     font-weight: bold;
+    position: relative;
+    left: 0;
   }
 
   .nav-link:hover {
@@ -143,7 +145,14 @@
     background: var(--bg-secondary);
     color: var(--text-secondary);
   }
-
+  .nav-link:after{
+    background: linear-gradient(transparent, mediumslateblue, transparent);
+    height: 4rem;
+    width: 1rem;
+    position: absolute;
+    right: -1px;
+  }
+  
   .link-text {
     display: none;
     margin-left: 1rem;
