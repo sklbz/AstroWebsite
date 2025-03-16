@@ -12,11 +12,12 @@
       "@layouts/*": ["src/layouts/*"],
       "@styles/*": ["src/styles/*"],
 			"@js/*":["src/js/*"],
+      "@src/*":["src/*"],
     },
     "lib": [
       "ESNext"
     ],
-    "module": "esnext",
+    "module": "NodeNext",
     "target": "esnext",
     "moduleResolution": "nodenext",
     "strict": true,
