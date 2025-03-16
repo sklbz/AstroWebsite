@@ -58,7 +58,7 @@
     top: 50%;
     translate: -50% -50%;
     border-radius: 50%;
-    background: linear-gradient(to right, aquamarine, mediumpurple);
+    background: linear-gradient(to right, hsl(217deg, 92%, 76%),hsl(267deg, 84%, 81%));
     animation: rotate 20s infinite;
     z-index: -100;
   }

@@ -1,3 +1,6 @@
+$blue: hsl(217deg, 92%, 76%);
+$mauve: hsl(267deg, 84%, 81%);
+
 * {
 	text-decoration: none; 
 	list-style-type: none;
