@@ -15,8 +15,13 @@
   "dependencies": {
     "@astrojs/svelte": "^2.1.0",
     "astro": "^2.1.7",
-    "firebase": "^10.7.2",
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.0.6",
+    "firebase": "^11.4.0",
     "firebase-tools": "^11.25.1",
+    "postcss": "^8.5.3",
+    "postcss-nested-vars": "^1.0.0",
+    "postcss-preset-env": "^10.1.5",
     "svelte": "^3.54.0"
   }
 }

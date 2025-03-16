@@ -165,11 +165,11 @@
   }
 
   .fa-primary {
-    color: #ff7eee;
+    color: hsl(217deg, 92%, 76%);
   }
 
   .fa-secondary {
-    color: #df49a6;
+    color: hsl(232deg, 97%, 85%);
   }
 
   .fa-primary,
